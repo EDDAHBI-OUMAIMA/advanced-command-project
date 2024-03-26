@@ -12,10 +12,15 @@ By writing the heat balance between the two fluids, we get:
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/912f050f-2128-4d46-8aa4-b20596b56203)
 
 mc and mf: The respective total masses of hot and cold fluids in the exchanger (in KG)
+
 Cp : heat mass of water at constant pressure in J/(Kg °C)
+
 h : the overall exchange coefficient
+
 S: section of the tubular heat exchanger
+
 Qc : mass flow rate of hot water in Kg/s
+
 Qf : mass flow rate of cold water in Kg/s
 
 **Hydraulic study**
