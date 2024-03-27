@@ -1,4 +1,4 @@
-In order to be able to control our system, we need to model it first, and to do this we have established a thermal study (for the system temperatures) and another hydraulic (flow rate and position of the valves).
+In order to be able to control our system (heat exchenger pilot), we need to model it first, and to do this we have established a thermal study (for the system temperatures) and another hydraulic (flow rate and position of the valves).
 
 **Thermal study**
 =====
@@ -27,3 +27,31 @@ Qf : mass flow rate of cold water in Kg/s
 =====
 
 The valves used in this process are valves with positioners, so they can be modeled by the following 2nd order system:
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/0f97d9fb-7f04-42d6-bd3a-30089a890ded)
+
+Therefore:
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/32c15c4d-705b-4d2b-aa58-0903b1cc5c22)
+
+The flow of water in the exchanger is proportional to the condition of the valve:Xv
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/008c2548-fb55-4044-9191-bbcdd8ed281b)
+
+By combining the valve models and the heat exchanger model based on the energy balance, the overall process state model is obtained.
+Considering this state representation of a nonlinear system:
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/0af96f9b-6f85-46a1-849a-dee22d9933bc)
+
+And laying down the state vector, the input vector, and the output vector like this:
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/b8090153-c06c-4487-8ea8-a2f650a03a76)
+
+ The status model found:
+
+ ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/d909fc42-cd80-4ed9-a75c-11a8cde51bd2)
+
+
+
+
+
