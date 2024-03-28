@@ -102,27 +102,27 @@ By identification:
 
 
 To be able to act directly on the output, we act on yi,Vi.
-Vi= - Kizi+ Vic ; such that /( is stable.KiAi-BiKi)
-Vic => z3i=0 =Vi=  - Kizci+ Vic  => Vic = Kizci
-=>Vi= -  Kizi-zci
-=>V= -K(z-zc)
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/2f8e39b8-2b07-4a5a-ade7-9398fe946b37)
+
 With K = diag(K1,K2)
 Once we find V1 et V2, we move on to the following coordinate change:
-Diffeomorphism:
-We have , so we are in the case of assured stability.1+ 2=6=le nombre des variables d'état
-Change of contact information:
-z=z1 z2 z3  ; zi=z1i z2i z3i =yi yi yi  
-                    =>       z1i=z2izi=Aizi+BiVi
-                     z2i=z3i                         yi= Cizi
-                     z3i=Vi= yi(i)
-With:;  and Ai=0 1 0 0 0 1 0 0 0  Bi=0 0 1 Ci=1 0 0 
+**Diffeomorphism**
+We have , so we are in the case of assured stability.
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/5e7204ad-6f8b-4747-93c5-f23beb4147e5)
+
+**Change of contact information**
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/c416ea23-9fc5-4909-8a5c-2a66a3ba20a8)
+
 
 Our system is made up of 2 subsystems:
-A=   A1 0 0 A2 ;B=B1 0 0 B2 ;C= C1 0 0 C2 
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/3da18089-9bbe-48b9-8c03-2e7cceeabdff)
 
 So the state representation of the system (*) after transformation and decoupling:
-=>     z=Az+BV
-                        y=Cz
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/d3579961-9f6e-496c-b577-4ad0663880f9)
 
 
  
