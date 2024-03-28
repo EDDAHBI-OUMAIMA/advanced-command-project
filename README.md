@@ -74,8 +74,7 @@ We know that, and deriving the output:
 
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/a44b0b01-5438-410f-be66-811399b1398d)
 
-....
-	We continue to drift until we find the order , where 
+We continue to drift until we find the order , where 
  
  ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/9b936d5c-8f40-43f4-97bd-9bae9ea71cd6)
 
