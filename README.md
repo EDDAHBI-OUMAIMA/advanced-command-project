@@ -55,6 +55,7 @@ And laying down the state vector, the input vector, and the output vector like t
  **Decoupling control of nonlinear system**
  ====
  The decoupling control of nonlinear systems, or the linearization and decoupling method of I/O, is one of the methods used to control nonlinear systems, in fact, it consists of providing desired outputs by manipulating the inputs ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/d85af57a-eebb-4a40-b4fc-2a5ca451dad2)
+ 
 i = the characteristic number of the output such that yi
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/aff9a6a4-4c0f-4886-bb5d-fd04246283ce)
 
@@ -95,7 +96,7 @@ We drift until the command appears:y1 and y2
 These include:  ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/5ec80c45-ab98-4fe4-9a08-072329656886)
 
 
-By identification:
+**By identification**
 
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/f37558b7-e4d4-43af-9846-2a805951288c)
 
@@ -108,6 +109,7 @@ To be able to act directly on the output, we act on yi,Vi.
 
 With K = diag(K1,K2)
 Once we find V1 et V2, we move on to the following coordinate change:
+
 **Diffeomorphism**
 We have , so we are in the case of assured stability.
 
