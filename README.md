@@ -61,17 +61,23 @@ i = the characteristic number of the output such that yi
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/aff9a6a4-4c0f-4886-bb5d-fd04246283ce)
 
 The principle of this command is to determine the corrector in such a way as to compensate for the nonlinear effects of the system.
-The servo system then behaves like a transfer function system: ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/2dc2c7eb-39bc-4a17-a5c9-d745511ab0d5)
+The servo system then behaves like a transfer function system:
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/2dc2c7eb-39bc-4a17-a5c9-d745511ab0d5)
 
 
-To do this, we need to find the control law, such that it is influenced only by![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/4a87a0d0-2851-4272-a19f-f1cdba3205bb)
+To do this, we need to find the control law, such that it is influenced only by
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/4a87a0d0-2851-4272-a19f-f1cdba3205bb)
 
 We know that, and deriving the output: 
 
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/a44b0b01-5438-410f-be66-811399b1398d)
 
 ....
-	We continue to drift until we find the order , where ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/9b936d5c-8f40-43f4-97bd-9bae9ea71cd6)
+	We continue to drift until we find the order , where 
+ 
+ ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/9b936d5c-8f40-43f4-97bd-9bae9ea71cd6)
 
 
 In our case, the outlet is a 2x1 vector of the system temperatures (T2 hot water outlet and T4 cold water outlet).
@@ -94,7 +100,9 @@ Let's find ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/
  2 :
  
 We drift until the command appears:y1 and y2
-These include:  ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/5ec80c45-ab98-4fe4-9a08-072329656886)
+These include:  
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/5ec80c45-ab98-4fe4-9a08-072329656886)
 
 
 **By identification**
