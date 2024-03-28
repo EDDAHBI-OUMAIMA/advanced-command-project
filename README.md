@@ -138,8 +138,11 @@ So the state representation of the system (*) after transformation and decouplin
 **Resources**
 =====
 - A. J. Fossard & Normand-Cyrot : Systèmes non linéaires.
+  
     — Tome 1 : Modélisation-Estimation.
+  
     — Tome 2 : Stabilité et stabilisation.
+  
     — Tome 3 : Commande.
 - E. Dombre, W. Khalil : Mod´elisation et commande des robots.
 - C. Canudas de Wit, B. Siciliano and G. Bastin : Theory of Robot Control.
