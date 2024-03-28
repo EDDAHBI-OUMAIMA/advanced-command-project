@@ -51,6 +51,83 @@ And laying down the state vector, the input vector, and the output vector like t
 
  ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/d909fc42-cd80-4ed9-a75c-11a8cde51bd2)
 
+ **Decoupling control of nonlinear system**
+ ====
+ The decoupling control of nonlinear systems, or the linearization and decoupling method of I/O, is one of the methods used to control nonlinear systems, in fact, it consists of providing desired outputs by manipulating the inputs ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/d85af57a-eebb-4a40-b4fc-2a5ca451dad2)
+i = the characteristic number of the output such that yi
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/aff9a6a4-4c0f-4886-bb5d-fd04246283ce)
+
+The principle of this command is to determine the corrector in such a way as to compensate for the nonlinear effects of the system.
+The servo system then behaves like a transfer function system: ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/2dc2c7eb-39bc-4a17-a5c9-d745511ab0d5)
+
+
+To do this, we need to find the control law, such that it is influenced only by![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/4a87a0d0-2851-4272-a19f-f1cdba3205bb)
+
+We know that, and deriving the output: 
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/a44b0b01-5438-410f-be66-811399b1398d)
+
+....
+	We continue to drift until we find the order , where ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/9b936d5c-8f40-43f4-97bd-9bae9ea71cd6)
+
+
+In our case, the outlet is a 2x1 vector of the system temperatures (T2 hot water outlet and T4 cold water outlet).
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/cf0fea14-f12e-45b2-9039-62cf96c057b0)
+
+	
+By deriving these outputs respectively from the order p1 and p2
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/c1b05235-14b6-4d89-91d2-eacf60e25cbe)
+
+
+To be able to control them independently through the manipulation of , it is necessary to:yiVi
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/ac72f649-93f6-40f5-897a-6fef91eb9a5e)
+
+
+Let's find ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/d7e166cc-cff9-483a-8e83-3da52c72dc45)
+ 1 et ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/ddc69b3c-1c47-4ce3-a01c-b92b4005f432)
+ 2 :
+ 
+We drift until the command appears:y1 and y2
+These include:  ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/5ec80c45-ab98-4fe4-9a08-072329656886)
+
+
+By identification:
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/f37558b7-e4d4-43af-9846-2a805951288c)
+
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/ff7763f0-f9dd-44eb-a9b1-4e2467761286)
+
+
+To be able to act directly on the output, we act on yi,Vi.
+Vi= - Kizi+ Vic ; such that /( is stable.KiAi-BiKi)
+Vic => z3i=0 =Vi=  - Kizci+ Vic  => Vic = Kizci
+=>Vi= -  Kizi-zci
+=>V= -K(z-zc)
+With K = diag(K1,K2)
+Once we find V1 et V2, we move on to the following coordinate change:
+Diffeomorphism:
+We have , so we are in the case of assured stability.1+ 2=6=le nombre des variables d'état
+Change of contact information:
+z=z1 z2 z3  ; zi=z1i z2i z3i =yi yi yi  
+                    =>       z1i=z2izi=Aizi+BiVi
+                     z2i=z3i                         yi= Cizi
+                     z3i=Vi= yi(i)
+With:;  and Ai=0 1 0 0 0 1 0 0 0  Bi=0 0 1 Ci=1 0 0 
+
+Our system is made up of 2 subsystems:
+A=   A1 0 0 A2 ;B=B1 0 0 B2 ;C= C1 0 0 C2 
+
+So the state representation of the system (*) after transformation and decoupling:
+=>     z=Az+BV
+                        y=Cz
+
+
+ 
+
+
 
 
 
