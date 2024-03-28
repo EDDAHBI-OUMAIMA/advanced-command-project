@@ -120,6 +120,7 @@ With K = diag(K1,K2)
 Once we find V1 et V2, we move on to the following coordinate change:
 
 **Diffeomorphism**
+
 We have , so we are in the case of assured stability.
 
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/5e7204ad-6f8b-4747-93c5-f23beb4147e5)
@@ -130,6 +131,7 @@ We have , so we are in the case of assured stability.
 
 
 Our system is made up of 2 subsystems:
+
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/3da18089-9bbe-48b9-8c03-2e7cceeabdff)
 
 So the state representation of the system (*) after transformation and decoupling:
