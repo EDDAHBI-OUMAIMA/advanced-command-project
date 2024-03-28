@@ -54,9 +54,10 @@ And laying down the state vector, the input vector, and the output vector like t
 
  **Decoupling control of nonlinear system**
  ====
- The decoupling control of nonlinear systems, or the linearization and decoupling method of I/O, is one of the methods used to control nonlinear systems, in fact, it consists of providing desired outputs by manipulating the inputs ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/d85af57a-eebb-4a40-b4fc-2a5ca451dad2)
+ The decoupling control of nonlinear systems, or the linearization and decoupling method of I/O, is one of the methods used to control nonlinear systems, in fact, it consists of providing desired outputs by manipulating the inputs![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/d85af57a-eebb-4a40-b4fc-2a5ca451dad2)
  
 i = the characteristic number of the output such that yi
+
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/aff9a6a4-4c0f-4886-bb5d-fd04246283ce)
 
 The principle of this command is to determine the corrector in such a way as to compensate for the nonlinear effects of the system.
@@ -126,6 +127,8 @@ Our system is made up of 2 subsystems:
 So the state representation of the system (*) after transformation and decoupling:
 
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/d3579961-9f6e-496c-b577-4ad0663880f9)
+
+
 
 
  
