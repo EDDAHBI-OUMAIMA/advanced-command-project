@@ -61,9 +61,7 @@ i = the characteristic number of the output such that yi
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/aff9a6a4-4c0f-4886-bb5d-fd04246283ce)
 
 The principle of this command is to determine the corrector in such a way as to compensate for the nonlinear effects of the system.
-The servo system then behaves like a transfer function system:
-
-![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/2dc2c7eb-39bc-4a17-a5c9-d745511ab0d5)
+The servo system then behaves like a transfer function system:![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/2dc2c7eb-39bc-4a17-a5c9-d745511ab0d5)
 
 
 To do this, we need to find the control law, such that it is influenced only by
@@ -136,6 +134,17 @@ Our system is made up of 2 subsystems:
 So the state representation of the system (*) after transformation and decoupling:
 
 ![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/d3579961-9f6e-496c-b577-4ad0663880f9)
+
+**Resources**
+=====
+- A. J. Fossard & Normand-Cyrot : Systèmes non linéaires.
+    — Tome 1 : Modélisation-Estimation.
+    — Tome 2 : Stabilité et stabilisation.
+    — Tome 3 : Commande.
+- E. Dombre, W. Khalil : Mod´elisation et commande des robots.
+- C. Canudas de Wit, B. Siciliano and G. Bastin : Theory of Robot Control.
+- A. Isidori : Nonlinear control systems. Springer-Verlag, New York, 1989.
+- H. Nijmeijer, A. Van der Schaft : Nonlinear dynamical control systems, Springer-Verlag, Berlin, 1990.
 
 
 
