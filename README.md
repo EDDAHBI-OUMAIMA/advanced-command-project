@@ -41,7 +41,8 @@ The flow of water in the exchanger is proportional to the condition of the valve
 By combining the valve models and the heat exchanger model based on the energy balance, the overall process state model is obtained.
 Considering this state representation of a nonlinear system:
 
-![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/0af96f9b-6f85-46a1-849a-dee22d9933bc)
+![image](https://github.com/EDDAHBI-OUMAIMA/advanced-command-project/assets/147321335/41e64dd4-55c5-4408-be57-d2eee51f7efd)
+
 
 And laying down the state vector, the input vector, and the output vector like this:
 
